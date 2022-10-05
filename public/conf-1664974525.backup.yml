@@ -34,7 +34,36 @@ sections:
       cols: 1
       collapsed: false
       hideForGuests: false
-    items: []
+    items:
+      - title: clock
+        id: 0_1027_clock
+  - name: GitHub
+    icon: fab fa-github-alt
+    widgets:
+      - type: github-profile-stats
+        options:
+          username: yuzaii
+          hideLanguagesCard: true
+          repos:
+            - yuzaii/JsQndxx_Python
+        id: 0_579_githubprofilestats
+    displayData:
+      sortBy: default
+      rows: 2
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: MyGithub
+        description: 我的github主页
+        icon: png/github.png
+        url: https://github.com/yuzaii
+        id: 0_579_mygithub
+      - title: Trending
+        description: Github趋势
+        icon: png/snippetbox.png
+        url: https://github.com/trending
+        id: 1_579_trending
   - name: Public Services
     icon: fas fa-rocket
     items:
@@ -81,30 +110,3 @@ sections:
       cols: 1
       collapsed: false
       hideForGuests: false
-  - name: GitHub
-    icon: fab fa-github-alt
-    widgets:
-      - type: github-profile-stats
-        options:
-          username: yuzaii
-          hideLanguagesCard: true
-          repos:
-            - yuzaii/JsQndxx_Python
-        id: 0_579_githubprofilestats
-    displayData:
-      sortBy: default
-      rows: 2
-      cols: 1
-      collapsed: false
-      hideForGuests: false
-    items:
-      - title: MyGithub
-        description: 我的github主页
-        icon: png/github.png
-        url: https://github.com/yuzaii
-        id: 0_579_mygithub
-      - title: Trending
-        description: Github趋势
-        icon: png/snippetbox.png
-        url: https://github.com/trending
-        id: 1_579_trending

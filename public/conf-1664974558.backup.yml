@@ -34,7 +34,9 @@ sections:
       cols: 1
       collapsed: false
       hideForGuests: false
-    items: []
+    items:
+      - title: clock
+        id: 0_1027_clock
   - name: Public Services
     icon: fas fa-rocket
     items:

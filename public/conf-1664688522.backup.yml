@@ -1,8 +1,3 @@
-appConfig:
-  theme: default
-  layout: auto
-  iconSize: medium
-  language: cn
 pageInfo:
   title: Yuzai Home ServerCenter
   description: Welcome to your new dashboard!
@@ -13,58 +8,51 @@ pageInfo:
     - title: Documentation
       path: https://dashy.to/docs
       target: newtab
-  footerText: ''
+appConfig:
+  theme: dashy-docs
+  layout: auto
+  iconSize: medium
+  language: cn
 sections:
-  - name: ServerInfo
-    icon: fas fa-info-circle
+  - name: clock
+    icon: fas fa-clock
     widgets:
       - type: clock
         options:
           customCityName: 南京
           format: zh-CN
           hideDate: false
-        id: 0_1027_clock
-      - type: public-ip
-        options:
-          provider: ipapi.co
-        id: 1_1027_publicip
-    displayData:
-      sortBy: default
-      rows: 1
-      cols: 1
-      collapsed: false
-      hideForGuests: false
-    items: []
+        id: 0_524_clock
   - name: Public Services
     icon: fas fa-rocket
     items:
-      - title: Esxi
+      - title: ESXI
         description: ESXI虚拟机
         icon: png/vmware.png
         url: https://192.168.10.254/ui/#/login
         target: null
         statusCheck: true
         id: 0_1475_esxi
-      - title: IKuai
+      - title: 爱快
         description: 爱快软路由
-        icon: png/ikuai2.png
+        icon: favicon
         url: http://192.168.10.250
         target: null
         statusCheck: true
-        id: 1_1475_ikuai
-      - title: OpenWrt
+        id: 1_1475_
+      - title: OPWRT
         description: opwet软路由
         icon: svg/argon.svg
         url: http://192.168.10.251
         provider: ESIR
         statusCheck: true
-        id: 2_1475_openwrt
-      - title: Synology
+        id: 2_1475_opwrt
+      - title: "Synology\_NAS"
         description: 群晖NAS
         icon: png/synology.png
         url: http://192.168.10.11:5000
         statusCheck: true
-        id: 3_1475_synology
+        id: 3_1475_synologynas
       - title: Showcase
         description: See how others are using Dashy
         url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
@@ -81,30 +69,3 @@ sections:
       cols: 1
       collapsed: false
       hideForGuests: false
-  - name: GitHub
-    icon: fab fa-github-alt
-    widgets:
-      - type: github-profile-stats
-        options:
-          username: yuzaii
-          hideLanguagesCard: true
-          repos:
-            - yuzaii/JsQndxx_Python
-        id: 0_579_githubprofilestats
-    displayData:
-      sortBy: default
-      rows: 2
-      cols: 1
-      collapsed: false
-      hideForGuests: false
-    items:
-      - title: MyGithub
-        description: 我的github主页
-        icon: png/github.png
-        url: https://github.com/yuzaii
-        id: 0_579_mygithub
-      - title: Trending
-        description: Github趋势
-        icon: png/snippetbox.png
-        url: https://github.com/trending
-        id: 1_579_trending

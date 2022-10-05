@@ -1,6 +1,6 @@
 appConfig:
-  theme: default
-  layout: auto
+  theme: callisto
+  layout: vertical
   iconSize: medium
   language: cn
 pageInfo:
@@ -15,7 +15,7 @@ pageInfo:
       target: newtab
   footerText: ''
 sections:
-  - name: ServerInfo
+  - name: Info
     icon: fas fa-info-circle
     widgets:
       - type: clock
@@ -23,18 +23,33 @@ sections:
           customCityName: 南京
           format: zh-CN
           hideDate: false
-        id: 0_1027_clock
+        id: 0_396_clock
       - type: public-ip
         options:
           provider: ipapi.co
-        id: 1_1027_publicip
+        id: 1_396_publicip
     displayData:
       sortBy: default
       rows: 1
       cols: 1
       collapsed: false
       hideForGuests: false
-    items: []
+  - name: GitHub
+    icon: fab fa-github
+    widgets:
+      - type: github-profile-stats
+        options:
+          username: yuzaii
+          hideLanguagesCard: true
+          repos:
+            - yuzaii/JsQndxx_Python
+        id: 0_579_githubprofilestats
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
   - name: Public Services
     icon: fas fa-rocket
     items:
@@ -81,30 +96,3 @@ sections:
       cols: 1
       collapsed: false
       hideForGuests: false
-  - name: GitHub
-    icon: fab fa-github-alt
-    widgets:
-      - type: github-profile-stats
-        options:
-          username: yuzaii
-          hideLanguagesCard: true
-          repos:
-            - yuzaii/JsQndxx_Python
-        id: 0_579_githubprofilestats
-    displayData:
-      sortBy: default
-      rows: 2
-      cols: 1
-      collapsed: false
-      hideForGuests: false
-    items:
-      - title: MyGithub
-        description: 我的github主页
-        icon: png/github.png
-        url: https://github.com/yuzaii
-        id: 0_579_mygithub
-      - title: Trending
-        description: Github趋势
-        icon: png/snippetbox.png
-        url: https://github.com/trending
-        id: 1_579_trending

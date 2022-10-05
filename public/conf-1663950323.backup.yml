@@ -1,0 +1,55 @@
+pageInfo:
+  title: 鱼仔的家庭服务器
+  description: Welcome to your new dashboard!
+  navLinks:
+    - title: GitHub
+      path: https://github.com/Lissy93/dashy
+    - title: Documentation
+      path: https://dashy.to/docs
+appConfig:
+  theme: callisto
+  layout: horizontal
+  iconSize: medium
+  language: cn
+sections:
+  - name: 快速跳转
+    icon: fas fa-rocket
+    items:
+      - title: ESXI
+        description: ESXI虚拟机
+        icon: hl-vmwareesxi
+        url: http:192.168.10.254
+        target: newtab
+        id: 0_134505_esxi
+      - title: GitHub
+        description: Source Code, Issues and Pull Requests
+        icon: hl-adguardhome
+        url: https://github.com/lissy93/dashy
+        id: 1_134505_github
+      - title: Docs
+        description: Configuring & Usage Documentation
+        icon: act.png
+        url: https://dashy.to/docs
+        provider: Dashy.to
+        id: 2_134505_docs
+      - title: Showcase
+        description: See how others are using Dashy
+        url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
+        icon: far fa-grin-hearts
+        id: 3_134505_showcase
+      - title: Config Guide
+        description: See full list of configuration options
+        url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
+        icon: fas fa-wrench
+        id: 4_134505_configguide
+      - title: Support
+        description: Get help with Dashy, raise a bug, or get in contact
+        url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
+        icon: far fa-hands-helping
+        id: 5_134505_support
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
